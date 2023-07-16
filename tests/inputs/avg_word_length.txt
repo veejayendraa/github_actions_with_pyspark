@@ -1,0 +1,14 @@
+ Cloud Composer -
+File Formats
+CMEK with managed tables
+Secrets & Encryption keys
+RTL for / How to productionize the Dataflow jobs
+Microservices
+No Kafka
+No terraform
+No microservices
+
+Done Kubernetes PoC
+summary
+1 slider for 3 approaches
+online/offline ML model perspective
