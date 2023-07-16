@@ -1,6 +1,6 @@
 import unittest
 
-import average_word_length
+from src import average_word_length
 import findspark
 findspark.init()
 
