@@ -1,6 +1,6 @@
 import unittest
 
-from average_word_length import calculate_average_word_length
+import average_word_length
 import findspark
 findspark.init()
 
@@ -10,7 +10,7 @@ class AverageWordLengthTestCase(unittest.TestCase):
         expected_average = 5.24  # Define the expected average word length
 
         # Call the function and get the result
-        result = calculate_average_word_length(input_file)
+        result = average_word_length.calculate_average_word_length(input_file)
 
         # Assert that the result matches the expected average
         self.assertAlmostEqual(result, expected_average, delta=0.01)
