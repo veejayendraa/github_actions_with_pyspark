@@ -4,9 +4,15 @@ from src import average_word_length
 import findspark
 findspark.init()
 
+import os
+
+# Get the absolute path to the project's root directory
+project_root = os.path.abspath(os.path.dirname(__file__))
+
+
 class AverageWordLengthTestCase(unittest.TestCase):
     def test_average_word_length(self):
-        input_file = "inputs/avg_word_length.txt"
+        input_file = os.path.join(project_root,"inputs/avg_word_length.txt")
         expected_average = 5.24  # Define the expected average word length
 
         # Call the function and get the result
